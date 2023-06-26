@@ -96,7 +96,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-screen">
+    <div className="flex flex-col justify-center items-center h-screen w-screen bg-gradient-to-r from-purple-500 to-purple-900">
       <div className="absolute left-2 top-2">
         <ConnectButton />
       </div>
@@ -147,7 +147,8 @@ export default function Home() {
                   : "flex"
               } flex flex-col justify-start items-start w-full`}
             >
-              <div className="flex flex-row justify-evenly items-center w-full">
+              <div className="flex flex-row justify-evenly items-center w-full backdrop-blur-2xl bg-white-400 bg-opacity-40">
+
                 <span className="font-bold text-[1.5rem]">{project.title}</span>
                 <span className="font-bold text-[1.5rem]">
                   Goal Amount:{" "}
